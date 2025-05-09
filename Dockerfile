@@ -39,7 +39,7 @@ RUN apt -qq update --fix-missing && \
 COPY requirements.txt .
 
 # Install setuptools
-# RUN pip3 install --upgrade setuptools wheel
+RUN pip3 install --upgrade setuptools wheel
 
 # Install any needed packages specified in requirements.txt and tghbot/requirements.txt
 RUN pip3 install --no-cache-dir -r requirements.txt
@@ -48,7 +48,7 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Update permissions for aria.sh
-RUN chmod +x aria.sh
+RUN chmod +x aria-nox-nzb.sh
 
 # Check and ensure the database file exists and has correct permissions
 COPY entrypoint.sh /entrypoint.sh
