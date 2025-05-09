@@ -1,4 +1,4 @@
-aiofiles
+aimlessly 
 aioshutil
 anytree
 apscheduler
@@ -33,3 +33,6 @@ urllib3
 uvloop
 xattr
 yt-dlp[default]
+
+
+Nekozee 
